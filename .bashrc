@@ -140,3 +140,4 @@ case $- in i)
     [ -z "$TMUX" ] && exec tmux
 esac
 source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"

@@ -79,6 +79,7 @@ github
 docker
 python
 zsh-syntax-highlighting
+exercism
 
 )
 
@@ -89,6 +90,9 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export PATH="$PATH:/home/fukurou/.local/bin"
+export fpath=(~/.zsh/functions $fpath)
+export fpath=(~/.oh-my-zsh/custom/plugins/exercism $fpath)
+autoload -U compinit && compinit
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -131,3 +135,4 @@ PS2=$' %{$fg[green]%}|>%{$reset_color%} '
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[red]%}[%{$fg_bold[white]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}%{$fg[red]%}] "
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}⚡%{$reset_color%}"
+export PATH=~/bin:$PATH
