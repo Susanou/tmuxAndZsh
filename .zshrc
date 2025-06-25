@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/fukurou/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export PATH="$PATH:/home/fukurou/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export fpath=(~/.zsh/functions $fpath)
 export fpath=(~/.oh-my-zsh/custom/plugins/exercism $fpath)
 autoload -U compinit && compinit
@@ -116,7 +116,7 @@ autoload -U compinit && compinit
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias pip3=/home/fukurou/.local/bin/pip3
+alias pip3=$HOME/.local/bin/pip3
 alias cat=bat
 alias firefox="flatpak run org.mozilla.firefox"
 
